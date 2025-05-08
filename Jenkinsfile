@@ -72,10 +72,10 @@ pipeline {
                    script {
                       if (isUnix()) {
                           // For Linux/MacOS
-                     sh 'docker run -d --name hotstar -p 3000:3000 aseemakram19/hotstar:latest'
+                     sh 'docker run -d --name hotstar -p 3000:3000 tejaroyal/hotstar:latest'
                     } else {
                         // For Windows
-                     bat 'docker run -d --name hotstar -p 3000:3000 aseemakram19/hotstar:latest'
+                     bat 'docker run -d --name hotstar -p 3000:3000 tejaroyal/hotstar:latest'
                }
            }
        }
